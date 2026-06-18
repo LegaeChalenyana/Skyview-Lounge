@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Skyview Lounge – A premier rooftop dining and social experience offering fine cuisine, curated cocktails, and breathtaking views." />
+  <meta name="keywords" content="Skyview Lounge, rooftop dining, fine dining, cocktail bar, restaurant" />
+  <title>Skyview Lounge | Elevated Dining Experience</title>
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Skyview Lounge Home">Sky<span>view</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/menu.html">Menu</a></li>
+        <li><a href="pages/events.html">Events</a></li>
+        <li><a href="pages/gallery.html">Gallery</a></li>
+        <li><a href="pages/contact.html" class="nav-cta">Reserve</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero" aria-label="Hero section">
+    <!-- Atmospheric SVG background -->
+    <div class="hero-bg-svg" aria-hidden="true">
+      <svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;position:absolute;inset:0;">
+        <defs>
+          <radialGradient id="skyGrad" cx="50%" cy="40%" r="70%">
+            <stop offset="0%"   stop-color="#1a1006"/>
+            <stop offset="60%"  stop-color="#0d0d0d"/>
+            <stop offset="100%" stop-color="#050505"/>
+          </radialGradient>
+          <radialGradient id="glowCenter" cx="50%" cy="35%" r="35%">
+            <stop offset="0%"   stop-color="#C9A84C" stop-opacity="0.18"/>
+            <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <!-- Sky gradient -->
+        <rect width="1440" height="900" fill="url(#skyGrad)"/>
+        <!-- Warm glow -->
+        <ellipse cx="720" cy="320" rx="500" ry="250" fill="url(#glowCenter)"/>
+        <!-- City skyline silhouette -->
+        <g fill="#111" opacity="0.8">
+          <rect x="0"   y="680" width="60"  height="220"/>
+          <rect x="55"  y="640" width="45"  height="260"/>
+          <rect x="95"  y="600" width="30"  height="300"/>
+          <rect x="120" y="580" width="55"  height="320"/>
+          <rect x="170" y="620" width="40"  height="280"/>
+          <rect x="205" y="550" width="80"  height="350"/>
+          <rect x="280" y="590" width="35"  height="310"/>
+          <rect x="310" y="570" width="60"  height="330"/>
+          <rect x="365" y="530" width="90"  height="370"/>
+          <rect x="450" y="600" width="40"  height="300"/>
+          <rect x="485" y="565" width="70"  height="335"/>
+          <rect x="550" y="520" width="110" height="380"/>
+          <rect x="655" y="560" width="55"  height="340"/>
+          <rect x="705" y="510" width="100" height="390"/>
+          <rect x="800" y="545" width="80"  height="355"/>
+          <rect x="875" y="580" width="55"  height="320"/>
+          <rect x="925" y="540" width="90"  height="360"/>
+          <rect x="1010" y="570" width="65" height="330"/>
+          <rect x="1070" y="600" width="40" height="300"/>
+          <rect x="1105" y="555" width="85" height="345"/>
+          <rect x="1185" y="590" width="50" height="310"/>
+          <rect x="1230" y="620" width="75" height="280"/>
+          <rect x="1300" y="650" width="50" height="250"/>
+          <rect x="1345" y="680" width="95" height="220"/>
+        </g>
+        <!-- Window lights -->
+        <g fill="#C9A84C" opacity="0.35">
+          <rect x="215" y="570" width="6" height="4"/>
+          <rect x="230" y="560" width="6" height="4"/>
+          <rect x="245" y="575" width="6" height="4"/>
+          <rect x="560" y="535" width="6" height="4"/>
+          <rect x="575" y="545" width="6" height="4"/>
+          <rect x="590" y="528" width="6" height="4"/>
+          <rect x="715" y="520" width="6" height="4"/>
+          <rect x="730" y="530" width="6" height="4"/>
+          <rect x="745" y="515" width="6" height="4"/>
+          <rect x="810" y="555" width="6" height="4"/>
+          <rect x="825" y="565" width="6" height="4"/>
+        </g>
+        <!-- Stars -->
+        <g fill="#fff">
+          <circle cx="100" cy="80"  r="1.2" opacity="0.7"/>
+          <circle cx="250" cy="50"  r="0.9" opacity="0.6"/>
+          <circle cx="400" cy="100" r="1.0" opacity="0.5"/>
+          <circle cx="600" cy="60"  r="1.3" opacity="0.8"/>
+          <circle cx="800" cy="90"  r="0.8" opacity="0.5"/>
+          <circle cx="1000" cy="45" r="1.1" opacity="0.7"/>
+          <circle cx="1200" cy="75" r="0.9" opacity="0.6"/>
+          <circle cx="1350" cy="110" r="1.2" opacity="0.5"/>
+          <circle cx="150" cy="140" r="0.7" opacity="0.4"/>
+          <circle cx="480" cy="130" r="1.0" opacity="0.6"/>
+          <circle cx="900" cy="120" r="0.8" opacity="0.5"/>
+        </g>
+        <!-- Dark overlay at bottom -->
+        <rect x="0" y="500" width="1440" height="400" fill="url(#fadeBottom)" opacity="0.8"/>
+        <defs>
+          <linearGradient id="fadeBottom" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#0d0d0d" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#0d0d0d" stop-opacity="1"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="500" width="1440" height="400" fill="url(#fadeBottom)"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-tagline">Rooftop Dining &amp; Social Lounge</p>
+      <h1>Where Every Evening Becomes <em>Unforgettable</em></h1>
+      <p class="hero-sub">Fine cuisine, handcrafted cocktails, and panoramic skyline views — all in one elevated experience.</p>
+      <div class="hero-buttons">
+        <a href="pages/contact.html" class="btn-gold">Reserve a Table</a>
+        <a href="pages/menu.html" class="btn-outline">View Our Menu</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">Scroll</div>
+  </section>
+
+  <!-- ======== STATS BAR ======== -->
+  <div class="stats-bar reveal">
+    <div class="stats-inner">
+      <div>
+        <span class="stat-number" data-target="12" data-suffix="+">0+</span>
+        <span class="stat-label">Years of Excellence</span>
+      </div>
+      <div>
+        <span class="stat-number" data-target="85" data-suffix="+">0+</span>
+        <span class="stat-label">Menu Selections</span>
+      </div>
+      <div>
+        <span class="stat-number" data-target="4800" data-suffix="+">0+</span>
+        <span class="stat-label">Happy Guests</span>
+      </div>
+      <div>
+        <span class="stat-number" data-target="5" data-suffix="★">0★</span>
+        <span class="stat-label">Average Rating</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== ABOUT STRIP ======== -->
+  <section class="about-strip" aria-label="About Skyview Lounge">
+    <div class="about-strip-img">
+      
+      <img src="images/skyview.jpg" alt="Interior of Skyview Lounge with city skyline view" />
+      
+    </div>
+    <div class="about-strip-text">
+      <span class="section-label">Our Story</span>
+      <hr class="gold-divider" />
+      <h2>A Sanctuary <em class="italic gold-text">Above the City</em></h2>
+      <p style="margin:1.25rem 0;">Founded in 2012, Skyview Lounge was born from a single vision: to create a space where exceptional food, artful mixology, and the energy of the city skyline converge into one seamless experience.</p>
+      <p>Perched on the 24th floor, our space is curated for those who appreciate the finer details — from the soft glow of our Edison lighting to the hand-selected tableware imported from Portugal.</p>
+      <a href="pages/about.html" class="btn-outline" style="margin-top:2rem;">Discover Our Story</a>
+    </div>
+  </section>
+
+  <!-- ======== FEATURES ======== -->
+  <section class="section section-dark reveal" aria-label="What we offer">
+    <div class="container">
+      <div class="text-center" style="max-width:560px;margin:0 auto 0.5rem;">
+        <span class="section-label">The Experience</span>
+        <h2>Everything You Need for a <em class="italic gold-text">Perfect Evening</em></h2>
+      </div>
+      <div class="cards-grid" style="margin-top:3.5rem;">
+        <div class="feature-card reveal">
+          <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-utensils"></i></div>
+          <h4>Fine Dining</h4>
+          <p>Seasonally curated dishes crafted by our Executive Chef, drawing from local Botswana produce and international culinary traditions.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-martini-glass-citrus"></i></div>
+          <h4>Craft Cocktails</h4>
+          <p>Our master mixologists blend premium spirits with hand-pressed botanicals, creating cocktails that are as visual as they are delicious.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-city"></i></div>
+          <h4>Panoramic Views</h4>
+          <p>Floor-to-ceiling glass panels offer sweeping vistas of the cityscape — a breathtaking backdrop for any occasion.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-music"></i></div>
+          <h4>Live Entertainment</h4>
+          <p>From smooth jazz on weekday evenings to curated DJ sets on weekends, the atmosphere is always perfectly tuned.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-star"></i></div>
+          <h4>Private Events</h4>
+          <p>Our dedicated events team transforms Skyview into the perfect venue for birthdays, corporate gatherings, and intimate celebrations.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-wine-bottle"></i></div>
+          <h4>Curated Wine List</h4>
+          <p>Over 120 labels from celebrated vineyards in South Africa, France, and Italy — expertly paired by our sommelier on request.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== MENU PREVIEW ======== -->
+  <section class="section section-dark2 reveal" aria-label="Menu preview">
+    <div class="container text-center" style="max-width:600px;margin:0 auto;">
+      <span class="section-label">Taste the Difference</span>
+      <hr class="gold-divider centered" />
+      <h2>Signature <em class="italic gold-text">Highlights</em></h2>
+      <p style="margin:1rem 0 2.5rem;">A curated glimpse at the dishes and drinks that define the Skyview experience.</p>
+    </div>
+    <div class="container">
+      <div class="menu-tabs" role="tablist">
+        <button class="menu-tab active" data-tab="starters" role="tab" aria-selected="true">Starters</button>
+        <button class="menu-tab" data-tab="mains" role="tab" aria-selected="false">Mains</button>
+        <button class="menu-tab" data-tab="cocktails" role="tab" aria-selected="false">Cocktails</button>
+        <button class="menu-tab" data-tab="desserts" role="tab" aria-selected="false">Desserts</button>
+      </div>
+
+      <!-- Starters -->
+      <div class="menu-panel active" id="starters" role="tabpanel">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="menu-item-info"><h4>Seared Scallops</h4><p>Pan-seared king scallops, truffle cream, pea purée, crispy pancetta</p></div><div class="menu-item-price">P195</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Beef Carpaccio</h4><p>Thinly sliced wagyu, shaved parmesan, capers, lemon-herb dressing</p></div><div class="menu-item-price">P175</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Burrata &amp; Heirloom</h4><p>Fresh burrata, heirloom tomatoes, basil oil, aged balsamic, sea salt</p></div><div class="menu-item-price">P160</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Oysters (Half Dozen)</h4><p>Fresh Namibian oysters, champagne mignonette, lemon</p></div><div class="menu-item-price">P220</div></div>
+        </div>
+      </div>
+
+      <!-- Mains -->
+      <div class="menu-panel" id="mains" role="tabpanel">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="menu-item-info"><h4>Wagyu Ribeye 300g</h4><p>Premium wagyu, bone marrow butter, roasted garlic, seasonal greens</p></div><div class="menu-item-price">P485</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Lobster Thermidor</h4><p>Half lobster, cognac cream sauce, gruyère gratin, herb butter</p></div><div class="menu-item-price">P520</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Roasted Duck Breast</h4><p>Orange-glazed duck, braised red cabbage, dauphinoise potato, jus</p></div><div class="menu-item-price">P345</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Wild Mushroom Risotto</h4><p>Arborio rice, porcini, truffle oil, aged pecorino — vegetarian</p></div><div class="menu-item-price">P265</div></div>
+        </div>
+      </div>
+
+      <!-- Cocktails -->
+      <div class="menu-panel" id="cocktails" role="tabpanel">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="menu-item-info"><h4>Skyline Sour</h4><p>Bourbon, fresh lemon, honey syrup, lavender bitters, egg white foam</p></div><div class="menu-item-price">P120</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Midnight Negroni</h4><p>Small-batch gin, sweet vermouth, Campari, activated charcoal, orange</p></div><div class="menu-item-price">P115</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Gold Rush</h4><p>Aged tequila, turmeric cordial, pineapple, lime, tajin rim</p></div><div class="menu-item-price">P125</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>The Botanist's Garden</h4><p>Hendricks gin, elderflower, cucumber ribbon, tonic, fresh mint</p></div><div class="menu-item-price">P110</div></div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="menu-panel" id="desserts" role="tabpanel">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="menu-item-info"><h4>Dark Chocolate Fondant</h4><p>Valrhona 70% chocolate, salted caramel centre, vanilla bean ice cream</p></div><div class="menu-item-price">P145</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Crème Brûlée</h4><p>Classic vanilla custard, caramelised sugar crust, fresh berry compote</p></div><div class="menu-item-price">P130</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Cheese Board for Two</h4><p>Artisan cheeses, fig preserve, walnut crackers, quince paste</p></div><div class="menu-item-price">P195</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Passionfruit Panna Cotta</h4><p>Silky panna cotta, exotic fruit coulis, coconut tuile</p></div><div class="menu-item-price">P135</div></div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top:3rem;">
+        <a href="pages/menu.html" class="btn-gold">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== RESERVATION CTA ======== -->
+  <section class="reservation-strip reveal" aria-label="Make a reservation">
+    <div class="container" style="position:relative;z-index:1;">
+      <span class="section-label" style="text-align:center;display:block;">Limited Availability</span>
+      <hr class="gold-divider centered" />
+      <h2 style="margin-bottom:1rem;">Reserve Your <em class="italic gold-text">Table Tonight</em></h2>
+      <p style="max-width:480px;margin:0 auto 2.5rem;text-align:center;">Secure your spot at Gaborone's most celebrated rooftop dining destination. Tables fill quickly on weekends.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="pages/contact.html" class="btn-gold">Make a Reservation</a>
+        <a href="tel:+26771234567" class="btn-outline"><i class="fa-solid fa-phone" style="margin-right:0.5rem;"></i>+267 71 234 567</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== TESTIMONIALS ======== -->
+  <section class="section section-dark reveal" aria-label="Guest testimonials">
+    <div class="container text-center">
+      <span class="section-label">Guest Voices</span>
+      <hr class="gold-divider centered" />
+      <h2>What Our <em class="italic gold-text">Guests Say</em></h2>
+      <div class="testimonials-slider">
+        <div class="testimonial active">
+          <p class="testimonial-quote">The view alone is worth every pula. Add the wagyu and the Skyline Sour cocktail and you have an evening you simply cannot forget. Skyview has become our anniversary tradition.</p>
+          <p class="testimonial-author">— Kefilwe M., Gaborone</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-quote">From the moment we stepped in, the atmosphere was electric yet intimate. The sommelier's wine pairing was absolutely spot-on. This is what a world-class dining experience looks like.</p>
+          <p class="testimonial-author">— James T., Visiting from Johannesburg</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-quote">We booked Skyview for our company's year-end function. The events team handled everything flawlessly. The team is still talking about that evening six months later.</p>
+          <p class="testimonial-author">— Thabo S., Corporate Client</p>
+        </div>
+        <div class="testimonial-dots" role="list" aria-label="Testimonial navigation">
+          <button class="t-dot active" aria-label="Testimonial 1"></button>
+          <button class="t-dot" aria-label="Testimonial 2"></button>
+          <button class="t-dot" aria-label="Testimonial 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-brand-name">Skyview</p>
+        <p>A rooftop dining and social lounge experience, perched above the city. Exceptional food, handcrafted cocktails, and views that inspire.</p>
+        <div class="social-links" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+          <a href="#" class="social-link" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/about.html">About Us</a></li>
+          <li><a href="pages/menu.html">Menu</a></li>
+          <li><a href="pages/events.html">Events</a></li>
+          <li><a href="pages/gallery.html">Gallery</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Opening Hours</h5>
+        <div class="footer-hours">
+          <p>Mon – Thu: 5pm – 11pm</p>
+          <p>Fri – Sat: 4pm – 1am</p>
+          <p>Sunday: 12pm – 10pm</p>
+          <p>Public Holidays: 4pm – 11pm</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Find Us</h5>
+        <p class="footer-hours">24th Floor, Skyline Tower<br>Plot 1234, CBD<br>Gaborone, Botswana</p>
+        <p class="footer-hours" style="margin-top:1rem;">
+          <a href="tel:+26771234567">+267 71 234 567</a><br>
+          <a href="mailto:reservations@skyviewlounge.bw">reservations@skyviewlounge.bw</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="color:rgba(160,160,160,0.5);">&copy; 2026 Skyview Lounge. All rights reserved.</p>
+      <p style="color:rgba(160,160,160,0.4);font-size:0.75rem;">Gaborone, Botswana &nbsp;|&nbsp; W3C HTML5 &amp; CSS3 Compliant</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

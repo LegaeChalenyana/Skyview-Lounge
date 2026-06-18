@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore the full Skyview Lounge menu — fine dining starters, signature mains, handcrafted cocktails, wines and desserts." />
+  <title>Menu | Skyview Lounge</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">Sky<span>view</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="nav-cta">Reserve</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header" style="padding-top:8rem;">
+    <div class="page-header-bg" aria-hidden="true">
+      <svg viewBox="0 0 1440 450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;position:absolute;inset:0;">
+        <rect width="1440" height="450" fill="#0d0a05"/>
+        <ellipse cx="720" cy="200" rx="450" ry="200" fill="#C9A84C" opacity="0.06"/>
+      </svg>
+    </div>
+    <div class="page-header-content">
+      <span class="section-label">Crafted With Intention</span>
+      <h1>The <em class="italic gold-text">Menu</em></h1>
+    </div>
+  </header>
+
+  <!-- MENU NOTE -->
+  <div style="background:var(--dark-2);border-bottom:1px solid rgba(201,168,76,0.15);padding:1.25rem 2rem;text-align:center;">
+    <p style="font-size:0.82rem;max-width:600px;margin:0 auto;">All prices are in Botswana Pula (BWP) and inclusive of VAT. Menu items are subject to seasonal availability. Please inform your server of any dietary requirements or allergies.</p>
+  </div>
+
+  <!-- FULL MENU -->
+  <section class="section section-dark" aria-label="Full menu">
+    <div class="container">
+      <div class="menu-tabs" role="tablist">
+        <button class="menu-tab active" data-tab="m-starters" role="tab">Starters</button>
+        <button class="menu-tab" data-tab="m-mains" role="tab">Mains</button>
+        <button class="menu-tab" data-tab="m-sides" role="tab">Sides</button>
+        <button class="menu-tab" data-tab="m-cocktails" role="tab">Cocktails</button>
+        <button class="menu-tab" data-tab="m-wine" role="tab">Wine</button>
+        <button class="menu-tab" data-tab="m-desserts" role="tab">Desserts</button>
+      </div>
+
+      <!-- STARTERS -->
+      <div class="menu-panel active" id="m-starters" role="tabpanel">
+        <div style="margin-bottom:2rem;">
+          <span class="section-label">To Begin</span>
+          <hr class="gold-divider" />
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item"><div class="menu-item-info"><h4>Seared Scallops</h4><p>Pan-seared king scallops, truffle cream, pea purée, crispy pancetta, micro herbs</p></div><div class="menu-item-price">P195</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Beef Carpaccio</h4><p>Thinly sliced wagyu, shaved parmesan, capers, rocket, lemon-herb dressing</p></div><div class="menu-item-price">P175</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Burrata &amp; Heirloom Tomatoes</h4><p>Fresh burrata, heirloom tomatoes, basil oil, aged balsamic, fleur de sel <em style="color:var(--gold);font-size:0.75rem;">V</em></p></div><div class="menu-item-price">P160</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Fresh Oysters — Half Dozen</h4><p>Namibian oysters, champagne mignonette, fresh lemon</p></div><div class="menu-item-price">P220</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Chicken Liver Parfait</h4><p>Smooth chicken liver, port reduction, toasted brioche, cornichons</p></div><div class="menu-item-price">P145</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Gazpacho</h4><p>Chilled heirloom tomato soup, cucumber, herb oil, croutons <em style="color:var(--gold);font-size:0.75rem;">VG</em></p></div><div class="menu-item-price">P120</div></div>
+        </div>
+      </div>
+
+      <!-- MAINS -->
+      <div class="menu-panel" id="m-mains" role="tabpanel">
+        <div style="margin-bottom:2rem;">
+          <span class="section-label">The Main Course</span>
+          <hr class="gold-divider" />
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item"><div class="menu-item-info"><h4>Wagyu Ribeye 300g</h4><p>Premium wagyu MBS 5+, bone marrow butter, roasted garlic, watercress, seasonal greens</p></div><div class="menu-item-price">P485</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Lobster Thermidor</h4><p>Half whole lobster, cognac cream sauce, gruyère gratin, fresh herb butter</p></div><div class="menu-item-price">P520</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Roasted Duck Breast</h4><p>Orange-glazed duck, braised red cabbage, dauphinoise potato, duck jus</p></div><div class="menu-item-price">P345</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Pan-Roasted Sea Bass</h4><p>Crispy-skin sea bass, saffron beurre blanc, asparagus, samphire</p></div><div class="menu-item-price">P320</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Lamb Rack (3 Bones)</h4><p>Herb-crusted Karoo lamb, minted pea purée, fondant potato, red wine jus</p></div><div class="menu-item-price">P390</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Wild Mushroom Risotto <em style="color:var(--gold);font-size:0.75rem;">V</em></h4><p>Arborio rice, porcini, chanterelle, truffle oil, aged pecorino, chive</p></div><div class="menu-item-price">P265</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Beef Wellington (2 person)</h4><p>Centre-cut fillet, duxelles, prosciutto, golden puff pastry, Madeira sauce</p></div><div class="menu-item-price">P890</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Grilled Tiger Prawns</h4><p>Butterflied tiger prawns, chilli-garlic butter, lime, fresh coriander</p></div><div class="menu-item-price">P295</div></div>
+        </div>
+      </div>
+
+      <!-- SIDES -->
+      <div class="menu-panel" id="m-sides" role="tabpanel">
+        <div style="margin-bottom:2rem;">
+          <span class="section-label">To Complement</span>
+          <hr class="gold-divider" />
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item"><div class="menu-item-info"><h4>Truffle Fries</h4><p>Hand-cut fries, truffle oil, parmesan, sea salt, herb mayo</p></div><div class="menu-item-price">P75</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Dauphinoise Potato</h4><p>Thinly sliced potato, cream, garlic, gruyère, thyme</p></div><div class="menu-item-price">P70</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Charred Broccolini</h4><p>Tenderstem broccoli, chilli flakes, preserved lemon, toasted almonds</p></div><div class="menu-item-price">P65</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Creamed Spinach</h4><p>Baby spinach, cream, nutmeg, parmesan</p></div><div class="menu-item-price">P60</div></div>
+        </div>
+      </div>
+
+      <!-- COCKTAILS -->
+      <div class="menu-panel" id="m-cocktails" role="tabpanel">
+        <div style="margin-bottom:2rem;">
+          <span class="section-label">Handcrafted Cocktails</span>
+          <hr class="gold-divider" />
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item"><div class="menu-item-info"><h4>Skyline Sour</h4><p>Bourbon, fresh lemon, honey syrup, lavender bitters, pasteurised egg white foam</p></div><div class="menu-item-price">P120</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Midnight Negroni</h4><p>Small-batch gin, sweet vermouth, Campari, activated charcoal, orange twist</p></div><div class="menu-item-price">P115</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Gold Rush</h4><p>Aged tequila, turmeric cordial, fresh pineapple, lime, tajin rim, edible gold</p></div><div class="menu-item-price">P125</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>The Botanist's Garden</h4><p>Hendricks gin, elderflower liqueur, cucumber ribbon, premium tonic, fresh mint</p></div><div class="menu-item-price">P110</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Kalahari Sunset</h4><p>Gin, rose syrup, rooibos-infused honey, grapefruit, rosemary smoke</p></div><div class="menu-item-price">P130</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>The Classic Old Fashioned</h4><p>Single barrel bourbon, Angostura bitters, demerara sugar, orange zest</p></div><div class="menu-item-price">P115</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Rooftop Spritz</h4><p>Aperol, prosecco, fresh blood orange, soda, rosemary sprig</p></div><div class="menu-item-price">P105</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Non-Alcoholic: Skyview Sunrise</h4><p>Fresh mango, passion fruit, ginger, lemon, sparkling water, dehydrated citrus</p></div><div class="menu-item-price">P75</div></div>
+        </div>
+      </div>
+
+      <!-- WINE -->
+      <div class="menu-panel" id="m-wine" role="tabpanel">
+        <div style="margin-bottom:2rem;">
+          <span class="section-label">The Wine List</span>
+          <hr class="gold-divider" />
+        </div>
+        <p style="margin-bottom:2rem;font-size:0.88rem;">Prices shown per bottle. All wines are available by the glass — please ask your server. Our sommelier is available to assist with pairings.</p>
+        <div class="menu-grid">
+          <div class="menu-item"><div class="menu-item-info"><h4>Kanonkop Pinotage 2021</h4><p>Stellenbosch, South Africa — Full-bodied, dark fruit, smoky finish</p></div><div class="menu-item-price">P480</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Jordan Chardonnay 2022</h4><p>Stellenbosch, South Africa — Crisp, citrus, light oak, mineral finish</p></div><div class="menu-item-price">P390</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Château Margaux 2018</h4><p>Bordeaux, France — Cabernet Sauvignon blend, elegant, complex tannins</p></div><div class="menu-item-price">P4800</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Cloudy Bay Sauvignon Blanc</h4><p>Marlborough, New Zealand — Vibrant tropical fruit, crisp acidity</p></div><div class="menu-item-price">P550</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Moët &amp; Chandon Impérial</h4><p>Champagne, France — Brioche notes, fresh fruit, fine persistent bubbles</p></div><div class="menu-item-price">P1200</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Barolo DOCG 2019</h4><p>Piedmont, Italy — The king of Italian reds, robust, rose petal, tar</p></div><div class="menu-item-price">P1850</div></div>
+        </div>
+      </div>
+
+      <!-- DESSERTS -->
+      <div class="menu-panel" id="m-desserts" role="tabpanel">
+        <div style="margin-bottom:2rem;">
+          <span class="section-label">The Sweet Ending</span>
+          <hr class="gold-divider" />
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item"><div class="menu-item-info"><h4>Dark Chocolate Fondant</h4><p>Valrhona 70% chocolate, salted caramel centre, vanilla bean ice cream, gold flake</p></div><div class="menu-item-price">P145</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Classic Crème Brûlée</h4><p>Vanilla custard, caramelised sugar crust, fresh berry compote</p></div><div class="menu-item-price">P130</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Passionfruit Panna Cotta</h4><p>Silky panna cotta, exotic fruit coulis, toasted coconut tuile</p></div><div class="menu-item-price">P135</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Cheese Board for Two</h4><p>Selection of 5 artisan cheeses, fig preserve, walnut crackers, honeycomb, quince</p></div><div class="menu-item-price">P195</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Lemon Tart</h4><p>Crisp pastry shell, silky lemon curd, Italian meringue, candied zest</p></div><div class="menu-item-price">P125</div></div>
+          <div class="menu-item"><div class="menu-item-info"><h4>Affogato</h4><p>Two scoops vanilla gelato, double espresso, amaretto biscuits</p></div><div class="menu-item-price">P105</div></div>
+        </div>
+      </div>
+
+      <!-- Dietary key -->
+      <div style="margin-top:3rem;padding:1.5rem;background:var(--dark-2);border:1px solid rgba(201,168,76,0.1);">
+        <p style="font-size:0.8rem;"><span style="color:var(--gold);font-weight:600;">Dietary Key:</span> &nbsp; <em style="color:var(--gold);">V</em> = Vegetarian &nbsp;|&nbsp; <em style="color:var(--gold);">VG</em> = Vegan &nbsp;|&nbsp; <em style="color:var(--gold);">GF</em> = Gluten-Free on request. Please advise your server of any allergies or dietary requirements. Our kitchen handles tree nuts, shellfish, gluten, dairy, eggs and other common allergens.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-brand-name">Skyview</p>
+        <p>A rooftop dining and social lounge experience, perched above the city.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Opening Hours</h5>
+        <div class="footer-hours">
+          <p>Mon – Thu: 5pm – 11pm</p>
+          <p>Fri – Sat: 4pm – 1am</p>
+          <p>Sunday: 12pm – 10pm</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Find Us</h5>
+        <p class="footer-hours">24th Floor, Skyline Tower<br>Plot 1234, CBD, Gaborone</p>
+        <p class="footer-hours" style="margin-top:0.75rem;"><a href="contact.html" class="btn-outline" style="font-size:0.72rem;padding:0.5rem 1rem;">Make a Reservation</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="color:rgba(160,160,160,0.5);">&copy; 2026 Skyview Lounge. All rights reserved.</p>
+    </div>
+  </footer>
+  <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Skyview Lounge — make a reservation, send feedback, enquire about private events or get in touch with our team." />
+  <title>Contact &amp; Reserve | Skyview Lounge</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">Sky<span>view</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active nav-cta">Reserve</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header" style="padding-top:8rem;">
+    <div class="page-header-bg" aria-hidden="true">
+      <svg viewBox="0 0 1440 450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;position:absolute;inset:0;">
+        <rect width="1440" height="450" fill="#080a0d"/>
+        <ellipse cx="720" cy="200" rx="500" ry="220" fill="#C9A84C" opacity="0.05"/>
+      </svg>
+    </div>
+    <div class="page-header-content">
+      <span class="section-label">Get In Touch</span>
+      <h1>Contact &amp; <em class="italic gold-text">Reserve</em></h1>
+    </div>
+  </header>
+
+  <!-- CONTACT INFO + RESERVATION FORM -->
+  <section class="section section-dark" aria-label="Contact and reservation section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="reveal">
+          <span class="section-label">Find Us</span>
+          <hr class="gold-divider" />
+          <h2 style="margin-bottom:2rem;">We Would Love to <em class="italic gold-text">Hear From You</em></h2>
+
+          <div class="contact-info-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Address</h4>
+              <p>24th Floor, Skyline Tower<br>Plot 1234, Central Business District<br>Gaborone, Botswana</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+26771234567">+267 71 234 567</a> (Reservations)<br>
+              <a href="tel:+26771234568">+267 71 234 568</a> (Events)</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:reservations@skyviewlounge.bw">reservations@skyviewlounge.bw</a><br>
+              <a href="mailto:events@skyviewlounge.bw">events@skyviewlounge.bw</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-regular fa-clock"></i></div>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>Monday – Thursday: 5:00 PM – 11:00 PM<br>
+              Friday – Saturday: 4:00 PM – 1:00 AM<br>
+              Sunday: 12:00 PM – 10:00 PM<br>
+              Public Holidays: 4:00 PM – 11:00 PM</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-car"></i></div>
+            <div>
+              <h4>Parking</h4>
+              <p>Complimentary valet parking available for all dining guests from 5:00 PM. Enter via the Skyline Tower main entrance on Commerce Drive.</p>
+            </div>
+          </div>
+
+          <!-- Map placeholder -->
+          <div style="margin-top:2rem;border:1px solid rgba(201,168,76,0.15);overflow:hidden;" class="reveal">
+            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;" aria-label="Map location illustration">
+              <rect width="400" height="220" fill="#0f0f12"/>
+              <!-- Grid streets -->
+              <g stroke="#1e1e24" stroke-width="20" fill="none">
+                <line x1="0" y1="80" x2="400" y2="80"/>
+                <line x1="0" y1="140" x2="400" y2="140"/>
+                <line x1="100" y1="0" x2="100" y2="220"/>
+                <line x1="200" y1="0" x2="200" y2="220"/>
+                <line x1="300" y1="0" x2="300" y2="220"/>
+              </g>
+              <!-- Street labels -->
+              <g fill="#2a2a30" font-size="7" font-family="Arial" text-anchor="middle">
+                <text x="150" y="76">Commerce Drive</text>
+                <text x="250" y="136">Independence Ave</text>
+              </g>
+              <!-- Building blocks -->
+              <g fill="#1a1a20">
+                <rect x="110" y="10" width="80" height="60"/><rect x="210" y="10" width="80" height="60"/>
+                <rect x="10" y="10" width="80" height="60"/><rect x="10" y="90" width="80" height="40"/>
+                <rect x="310" y="10" width="80" height="60"/>
+                <rect x="110" y="150" width="80" height="60"/><rect x="210" y="150" width="80" height="60"/>
+                <rect x="10" y="150" width="80" height="60"/><rect x="310" y="150" width="80" height="60"/>
+              </g>
+              <!-- Skyline Tower highlight -->
+              <rect x="113" y="13" width="74" height="54" fill="#1e1a10" stroke="#C9A84C" stroke-width="1" opacity="0.8"/>
+              <text x="150" y="44" text-anchor="middle" font-family="Georgia, serif" font-size="7" fill="#C9A84C" opacity="0.9">SKYLINE</text>
+              <text x="150" y="55" text-anchor="middle" font-family="Georgia, serif" font-size="7" fill="#C9A84C" opacity="0.9">TOWER</text>
+              <!-- Pin -->
+              <g transform="translate(143, 5)">
+                <circle cx="7" cy="7" r="7" fill="#C9A84C"/>
+                <circle cx="7" cy="7" r="3" fill="#0d0d0d"/>
+                <polygon points="7,14 2,7 12,7" fill="#C9A84C"/>
+              </g>
+              <!-- Compass -->
+              <g transform="translate(370, 20)">
+                <circle cx="0" cy="0" r="12" fill="none" stroke="#C9A84C" stroke-width="0.5" opacity="0.4"/>
+                <text x="0" y="-16" text-anchor="middle" font-size="7" fill="#C9A84C" opacity="0.7">N</text>
+                <polygon points="0,-10 3,0 0,3 -3,0" fill="#C9A84C" opacity="0.6"/>
+                <polygon points="0,3 3,0 0,10 -3,0" fill="#555" opacity="0.4"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- RESERVATION FORM (Part B — HTML5 form with validation) -->
+        <div class="reveal">
+          <span class="section-label">Make a Reservation</span>
+          <hr class="gold-divider" />
+          <h2 style="margin-bottom:0.5rem;">Reserve Your <em class="italic gold-text">Table</em></h2>
+          <p style="margin-bottom:2rem;font-size:0.88rem;">Complete the form below and our team will confirm your reservation within 2 hours. For same-day bookings, please call us directly.</p>
+
+          <!-- RESERVATION FORM -->
+          <form id="reservation-form" class="validated-form" novalidate aria-label="Table reservation form">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="first-name">First Name <span class="required-star" aria-label="required">*</span></label>
+                <input type="text" id="first-name" name="first_name" class="form-control" placeholder="e.g. Naledi" required minlength="2" maxlength="50" autocomplete="given-name" />
+                <span class="form-error" data-for="first-name" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="last-name">Last Name <span class="required-star" aria-label="required">*</span></label>
+                <input type="text" id="last-name" name="last_name" class="form-control" placeholder="e.g. Kgomotso" required minlength="2" maxlength="50" autocomplete="family-name" />
+                <span class="form-error" data-for="last-name" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address <span class="required-star" aria-label="required">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com" required autocomplete="email" />
+                <span class="form-error" data-for="email" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number <span class="required-star" aria-label="required">*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="+267 71 234 567" required autocomplete="tel" />
+                <span class="form-error" data-for="phone" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="res-date">Preferred Date <span class="required-star" aria-label="required">*</span></label>
+                <input type="date" id="res-date" name="date" class="form-control" required />
+                <span class="form-error" data-for="res-date" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="res-time">Preferred Time <span class="required-star" aria-label="required">*</span></label>
+                <select id="res-time" name="time" class="form-control" required>
+                  <option value="" disabled selected>Select a time</option>
+                  <optgroup label="Weekday (Mon–Thu)">
+                    <option value="17:00">5:00 PM</option>
+                    <option value="17:30">5:30 PM</option>
+                    <option value="18:00">6:00 PM</option>
+                    <option value="18:30">6:30 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                    <option value="19:30">7:30 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                    <option value="20:30">8:30 PM</option>
+                    <option value="21:00">9:00 PM</option>
+                  </optgroup>
+                  <optgroup label="Weekend (Fri–Sat)">
+                    <option value="16:00">4:00 PM</option>
+                    <option value="16:30">4:30 PM</option>
+                    <option value="17:00">5:00 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                    <option value="21:00">9:00 PM</option>
+                    <option value="22:00">10:00 PM</option>
+                  </optgroup>
+                  <optgroup label="Sunday">
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="18:00">6:00 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                  </optgroup>
+                </select>
+                <span class="form-error" data-for="res-time" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="guests">Number of Guests <span class="required-star" aria-label="required">*</span></label>
+                <select id="guests" name="guests" class="form-control" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 Guest</option>
+                  <option value="2">2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="7-10">7 – 10 Guests</option>
+                  <option value="11-20">11 – 20 Guests</option>
+                  <option value="20+">20+ Guests (Private Event)</option>
+                </select>
+                <span class="form-error" data-for="guests" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="occasion">Occasion</label>
+                <select id="occasion" name="occasion" class="form-control">
+                  <option value="">No specific occasion</option>
+                  <option value="birthday">Birthday Celebration</option>
+                  <option value="anniversary">Anniversary</option>
+                  <option value="proposal">Marriage Proposal</option>
+                  <option value="corporate">Corporate Dinner</option>
+                  <option value="casual">Casual Dining</option>
+                  <option value="other">Other (please specify below)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="dietary">Dietary Requirements or Allergies</label>
+              <input type="text" id="dietary" name="dietary" class="form-control" placeholder="e.g. Gluten-free, nut allergy, vegetarian..." maxlength="200" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="special-requests">Special Requests or Additional Notes</label>
+              <textarea id="special-requests" name="special_requests" class="form-control" rows="4" placeholder="Let us know if you have any special requests — a specific table, a surprise cake, early seating..." maxlength="500"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="terms" name="terms" required />
+                <span>I agree to the <a href="#" style="color:var(--gold);">cancellation policy</a>. Reservations cancelled within 24 hours of the booking time may be subject to a no-show fee. <span class="required-star" aria-label="required">*</span></span>
+              </label>
+              <span class="form-error" data-for="terms" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="newsletter" name="newsletter" />
+                <span>I would like to receive updates about special events, promotions, and exclusive offers from Skyview Lounge. (Optional)</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn-gold" style="width:100%;justify-content:center;">
+              <i class="fa-solid fa-calendar-check" style="margin-right:0.6rem;"></i>Confirm Reservation
+            </button>
+
+            <div class="form-success" role="alert">
+              <i class="fa-solid fa-circle-check" style="margin-right:0.5rem;"></i>
+              <strong>Reservation Request Received!</strong> Thank you, our team will confirm your booking within 2 hours via email or phone.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEEDBACK FORM SECTION -->
+  <section class="section section-dark2" aria-label="Guest feedback section">
+    <div class="container" style="max-width:720px;">
+      <div class="text-center reveal">
+        <span class="section-label">Share Your Experience</span>
+        <hr class="gold-divider centered" />
+        <h2 style="margin-bottom:0.75rem;">Leave Us <em class="italic gold-text">Feedback</em></h2>
+        <p style="margin-bottom:2.5rem;">Your experience matters deeply to us. Whether your visit was exceptional or there is something we can improve, we want to hear it.</p>
+      </div>
+
+      <!-- FEEDBACK FORM -->
+      <form id="feedback-form" class="validated-form reveal" novalidate aria-label="Guest feedback form">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="fb-name">Your Name <span class="required-star" aria-label="required">*</span></label>
+            <input type="text" id="fb-name" name="name" class="form-control" placeholder="Your full name" required minlength="2" maxlength="80" autocomplete="name" />
+            <span class="form-error" data-for="fb-name" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fb-email">Email Address <span class="required-star" aria-label="required">*</span></label>
+            <input type="email" id="fb-email" name="email" class="form-control" placeholder="your@email.com" required autocomplete="email" />
+            <span class="form-error" data-for="fb-email" role="alert" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="fb-visit-date">Date of Visit <span class="required-star" aria-label="required">*</span></label>
+            <input type="date" id="fb-visit-date" name="visit_date" class="form-control" required />
+            <span class="form-error" data-for="fb-visit-date" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fb-type">Type of Visit <span class="required-star" aria-label="required">*</span></label>
+            <select id="fb-type" name="visit_type" class="form-control" required>
+              <option value="" disabled selected>Select</option>
+              <option value="dining">Dining</option>
+              <option value="cocktails">Cocktails at the Bar</option>
+              <option value="event">Event Attendance</option>
+              <option value="private-event">Private Event</option>
+            </select>
+            <span class="form-error" data-for="fb-type" role="alert" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <!-- Star rating -->
+        <div class="form-group">
+          <label class="form-label" for="fb-rating">Overall Rating <span class="required-star" aria-label="required">*</span></label>
+          <select id="fb-rating" name="rating" class="form-control" required>
+            <option value="" disabled selected>Select your rating</option>
+            <option value="5">★★★★★ — Exceptional</option>
+            <option value="4">★★★★☆ — Very Good</option>
+            <option value="3">★★★☆☆ — Good</option>
+            <option value="2">★★☆☆☆ — Could Be Better</option>
+            <option value="1">★☆☆☆☆ — Needs Significant Improvement</option>
+          </select>
+          <span class="form-error" data-for="fb-rating" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="fb-message">Your Feedback <span class="required-star" aria-label="required">*</span></label>
+          <textarea id="fb-message" name="message" class="form-control" rows="5" placeholder="Tell us about your experience — the food, the service, the atmosphere..." required minlength="20" maxlength="1000"></textarea>
+          <span class="form-error" data-for="fb-message" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="fb-recommend">Would you recommend Skyview Lounge? <span class="required-star" aria-label="required">*</span></label>
+          <select id="fb-recommend" name="recommend" class="form-control" required>
+            <option value="" disabled selected>Select</option>
+            <option value="yes-definitely">Yes, definitely</option>
+            <option value="yes-probably">Yes, probably</option>
+            <option value="not-sure">Not sure</option>
+            <option value="probably-not">Probably not</option>
+            <option value="no">No</option>
+          </select>
+          <span class="form-error" data-for="fb-recommend" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="fb-permission" name="permission" />
+            <span>I give Skyview Lounge permission to share my feedback (anonymously if preferred) for marketing and improvement purposes.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-gold" style="width:100%;">
+          <i class="fa-solid fa-paper-plane" style="margin-right:0.6rem;"></i>Submit Feedback
+        </button>
+
+        <div class="form-success" role="alert">
+          <i class="fa-solid fa-circle-check" style="margin-right:0.5rem;"></i>
+          <strong>Thank you for your feedback!</strong> Your input helps us continuously improve the Skyview experience.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-brand-name">Skyview</p>
+        <p>A rooftop dining and social lounge experience, perched above the city.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+          <a href="#" class="social-link" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Opening Hours</h5>
+        <div class="footer-hours">
+          <p>Mon – Thu: 5pm – 11pm</p>
+          <p>Fri – Sat: 4pm – 1am</p>
+          <p>Sunday: 12pm – 10pm</p>
+          <p>Public Holidays: 4pm – 11pm</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Find Us</h5>
+        <p class="footer-hours">24th Floor, Skyline Tower<br>Plot 1234, CBD<br>Gaborone, Botswana</p>
+        <p class="footer-hours" style="margin-top:1rem;">
+          <a href="tel:+26771234567">+267 71 234 567</a><br>
+          <a href="mailto:reservations@skyviewlounge.bw">reservations@skyviewlounge.bw</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="color:rgba(160,160,160,0.5);">&copy; 2026 Skyview Lounge. All rights reserved.</p>
+      <p style="color:rgba(160,160,160,0.4);font-size:0.75rem;">W3C HTML5 &amp; CSS3 Compliant</p>
+    </div>
+  </footer>
+  <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+
+  <!-- Set minimum date to today for the reservation date input -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var today = new Date().toISOString().split('T')[0];
+      var resDate = document.getElementById('res-date');
+      if (resDate) resDate.setAttribute('min', today);
+
+      var fbDate = document.getElementById('fb-visit-date');
+      if (fbDate) fbDate.setAttribute('max', today);
+
+      // Extra validation for checkbox required fields
+      var termsCheck = document.getElementById('terms');
+      if (termsCheck) {
+        termsCheck.addEventListener('change', function () {
+          var error = document.querySelector('[data-for="terms"]');
+          if (error) error.style.display = 'none';
+          this.style.outlineColor = '';
+        });
+
+        document.getElementById('reservation-form').addEventListener('submit', function (e) {
+          if (!termsCheck.checked) {
+            e.preventDefault();
+            var error = document.querySelector('[data-for="terms"]');
+            if (error) { error.style.display = 'block'; error.textContent = 'You must agree to the cancellation policy.'; }
+          }
+        }, true);
+      }
+    });
+  </script>
+</body>
+</html>
